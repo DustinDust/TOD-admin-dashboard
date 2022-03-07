@@ -1,30 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-screen w-screen">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
-  <body>
-    <div
-      id="app"
-      class="flex h-screen flex-col items-center justify-between py-8 text-center text-[#2c3e50] selection:bg-green-100"
-    >
-      <div>
-        <h1
-          class="bg-gradient-to-r from-green-600 to-sky-400 bg-clip-text text-5xl font-black text-transparent selection:bg-transparent"
-        >
-          Hello !
-        </h1>
-        <h3 class="my-4 text-2xl font-bold text-gray-500">
-          Vite + JS + tailwindcss v3
-        </h3>
-        <a href="https://vitejs.dev/guide/features.html" target="_blank"
-          >Documentation</a
-        >
+  <body class="h-full w-full">
+    <div class="root mr-0 grid h-full w-full grid-cols-4 grid-rows-4">
+      <header class="col-span-full col-start-2 h-full w-full bg-blue-500">
+        Header
+      </header>
+      <div class="dashboard row-span-full h-full w-full bg-red-700">
+        Dashboard
       </div>
-      <img class="block" src="./src/assets/powered-by-vitawind-bright.png" />
+      <main
+        class="col-span-full col-start-2 row-span-full row-start-2 grid grid-cols-3 grid-rows-3"
+      >
+        <div
+          class="project col-span-2 row-span-full h-full w-full bg-green-500"
+        >
+          projects
+        </div>
+        <div class="extra row-span-full grid grid-cols-1 grid-rows-2">
+          <div class="announcement h-full w-full bg-yellow-400">
+            announcement
+          </div>
+          <div class="trending h-full w-full bg-orange-600">trending</div>
+        </div>
+      </main>
     </div>
     <script type="module" src="./src/main.js"></script>
   </body>
