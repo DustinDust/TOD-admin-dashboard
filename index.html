@@ -2,17 +2,82 @@
 <html lang="en" class="h-screen w-screen">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./src/assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Admin Dashboard</title>
   </head>
   <body class="h-full w-full">
-    <div class="root mr-0 grid h-full w-full grid-cols-4 grid-rows-4">
-      <header class="col-span-full col-start-2 h-full w-full bg-blue-500">
+    <div class="root grid-cols-layout grid-rows-layout mr-0 grid h-full w-full">
+      <header class="col-span-full col-start-2 h-full w-full bg-teal-600">
         Header
       </header>
-      <div class="dashboard row-span-full h-full w-full bg-red-700">
-        Dashboard
+      <div
+        class="dashboard grid-rows-dashboard font-dashboard scrollbar-thin row-span-full grid h-full w-full grid-cols-1 items-center gap-y-8 overflow-auto bg-sky-600"
+      >
+        <div class="LOGO flex items-center justify-start gap-4">
+          <img
+            src="src/assets/dashboard-icon.svg"
+            class="ml-4 h-auto w-12"
+            alt="Dashboard-logo"
+            srcset=""
+          />
+          <span class="text-xl font-extrabold text-white">Dashboard</span>
+        </div>
+        <div class="functions">
+          <ul class="flex flex-col items-start gap-4">
+            <li class="dashboard-item">
+              <img src="./src/assets/home-icon.svg" alt="Home-icon" srcset="" />
+              <a href="#">Home</a>
+            </li>
+            <li class="dashboard-item">
+              <img
+                src="./src/assets/profile-icon.svg"
+                alt="Profile-icon"
+                srcset=""
+              />
+              <a href="#">Profile</a>
+            </li>
+            <li class="dashboard-item">
+              <img
+                src="src/assets/message-icon.svg"
+                alt="message-icon"
+                srcset=""
+              />
+              <a href="#">Message</a>
+            </li>
+            <li class="dashboard-item">
+              <img src="./src/assets/task-icon.svg" alt="Task-icon" srcset="" />
+              <a href="#">Tasks</a>
+            </li>
+            <li class="dashboard-item">
+              <img src="./src/assets/history.svg" alt="History-icon" />
+              <a href="#">History</a>
+            </li>
+            <li class="dashboard-item">
+              <img
+                src="./src/assets/communities-icon.svg"
+                alt="Communities-icon"
+              />
+              <a href="#">Communities</a>
+            </li>
+          </ul>
+        </div>
+        <div class="utils">
+          <ul class="flex flex-col items-start gap-4">
+            <li class="dashboard-item">
+              <img src="./src/assets/setting.svg" alt="setting-icon" />
+              <a href="#">Settings</a>
+            </li>
+            <li class="dashboard-item">
+              <img src="./src/assets/support-icon.svg" alt="support-icon" />
+              <a href="#">Support</a>
+            </li>
+            <li class="dashboard-item">
+              <img src="./src/assets/privacy-icon.svg" alt="privacy-icon" />
+              <a href="#">Privacy</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <main
         class="col-span-full col-start-2 row-span-full row-start-2 grid grid-cols-3 grid-rows-3"
