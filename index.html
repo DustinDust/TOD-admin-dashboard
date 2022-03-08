@@ -8,10 +8,10 @@
   </head>
   <body class="h-full w-full">
     <div
-      class="root font-whole grid-cols-layout grid-rows-layout mr-0 grid h-full w-full"
+      class="root mr-0 grid h-full w-full grid-cols-layout grid-rows-layout font-whole"
     >
       <header
-        class="grid-cols-header grid-rows-header z-10 col-span-full col-start-2 grid h-full w-full shadow-md"
+        class="z-10 col-span-full col-start-2 grid h-full w-full grid-cols-header grid-rows-header shadow-md"
       >
         <div
           class="search-bar ml-8 flex flex-row items-center gap-4 rounded-full bg-white p-2"
@@ -71,7 +71,7 @@
         </div>
       </header>
       <div
-        class="dashboard grid-rows-dashboard scrollbar-thin row-span-full grid h-full w-full grid-cols-1 items-center gap-y-8 overflow-auto bg-sky-600"
+        class="dashboard row-span-full grid h-full w-full grid-cols-1 grid-rows-dashboard items-center gap-y-8 overflow-auto bg-sky-600 scrollbar-thin"
       >
         <div class="LOGO flex items-center justify-start gap-4">
           <img
@@ -139,16 +139,15 @@
         </div>
       </div>
       <main
-        class="col-span-full col-start-2 row-span-full row-start-2 grid grid-cols-3 grid-rows-3 bg-gray-200 pt-2"
+        class="col-span-full col-start-2 row-span-full row-start-2 grid grid-cols-3 grid-rows-3 gap-8 bg-gray-200 p-8"
       >
         <section
-          class="projects col-span-2 row-span-full h-full w-full overflow-auto p-8"
+          class="projects col-span-2 row-span-full flex h-full w-full flex-col overflow-auto"
         >
-          <h3 class="mb-4 text-2xl font-extrabold">Your projects</h3>
-          <div class="project-container">
+          <h3 class="mb-2 text-2xl font-extrabold">Your projects</h3>
+          <div class="project-container flex-grow">
             <div class="project">
               <h4>Project 1</h4>
-
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Officia, eveniet?
@@ -267,8 +266,86 @@
           </div>
         </section>
         <section class="extra row-span-full grid grid-cols-1 grid-rows-2">
-          <div class="announcement h-full w-full bg-gray-200">announcement</div>
-          <div class="trending h-full w-full bg-gray-200">trending</div>
+          <div class="announcement flex h-full w-full flex-col bg-gray-200">
+            <h3 class="mb-2 text-2xl font-extrabold">Announcement</h3>
+            <div class="grow rounded-lg bg-white p-4 shadow-md">
+              <ul class="ancmnt-container">
+                <li>
+                  <div class="ancmnt-item">
+                    <h4>Site maintainence</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Quisquam doloremque fugit non obcaecati quo error
+                      exercitationem et quas nulla officiis.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="ancmnt-item">
+                    <h4>Communities share day</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aut quidem illo aliquam tenetur sed! Ipsam aliquid quas
+                      dolorum. Voluptatem, ea.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="ancmnt-item">
+                    <h4>Updated Privacy policies</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aliquam sit quam itaque soluta? Tenetur earum est
+                      voluptates aut, error ipsum.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="trending flex h-full w-full flex-col bg-gray-200">
+            <h3 class="mt-2 mb-2 text-2xl font-extrabold">Trending</h3>
+            <div class="grow rounded-lg bg-white p-4 shadow-md">
+              <ul class="trend-container">
+                <li>
+                  <div class="trend-item">
+                    <img
+                      src="./src/assets/usr-1.svg"
+                      class="usr-icon"
+                      alt="Tegan"
+                    /><span>@Tegan</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="trend-item">
+                    <img
+                      src="./src/assets/usr-2.svg"
+                      alt="Kendall"
+                      class="usr-icon"
+                    /><span>@Kendall</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="trend-item">
+                    <img
+                      src="./src/assets/usr-3.svg"
+                      alt="Morgan"
+                      class="usr-icon"
+                    /><span>@Morgan</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="trend-item">
+                    <img
+                      src="./src/assets/usr-4.svg"
+                      alt="Alex"
+                      class="usr-icon"
+                    /><span>@Alex</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
       </main>
     </div>

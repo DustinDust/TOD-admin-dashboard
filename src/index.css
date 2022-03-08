@@ -17,21 +17,61 @@ a {
 }
 
 .project-container {
-  @apply grid-cols-projects grid auto-rows-fr gap-8 overflow-auto;
+  @apply grid auto-rows-fr grid-cols-projects gap-x-10 gap-y-10 overflow-auto;
 }
 
 .project {
-  @apply grid max-h-64 grid-cols-1 grid-rows-3 rounded-lg border-l-8 border-l-yellow-500 bg-white p-6 shadow-md;
+  @apply z-10 grid grid-cols-1 grid-rows-project-card gap-2 rounded-lg border-l-8 border-l-yellow-500 bg-white p-6 shadow-md;
 }
 
 .project h4 {
-  @apply text-lg font-bold;
+  @apply text-2xl font-extrabold;
 }
 
 .project p {
-  @apply overflow-clip;
+  @apply overflow-hidden text-clip text-base text-gray-700;
 }
 
 .project-control {
   @apply flex flex-row gap-3 justify-self-end;
+}
+
+.ancmnt-container {
+  @apply grid grid-cols-1 grid-rows-3 gap-y-1;
+}
+
+.ancmnt-item {
+  @apply flex flex-col gap-1;
+}
+
+.ancmnt-container li {
+  @apply flex grow flex-col justify-center border-b-2 border-b-gray-300 last:border-b-0;
+}
+
+.ancmnt-item h4 {
+  @apply text-base font-bold;
+}
+
+.ancmnt-item p {
+  @apply text-sm font-light text-gray-700;
+}
+
+.trend-container {
+  @apply flex h-full w-full flex-col justify-center;
+}
+
+.trend-container li {
+  @apply flex grow flex-col justify-center border-b-2 border-b-gray-300 last:border-b-0;
+}
+
+.trend-item span {
+  @apply text-base font-bold;
+}
+
+.trend-item {
+  @apply flex flex-row items-center justify-start gap-8;
+}
+
+.usr-icon {
+  @apply h-14 w-14;
 }
