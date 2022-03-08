@@ -7,12 +7,71 @@
     <title>Admin Dashboard</title>
   </head>
   <body class="h-full w-full">
-    <div class="root grid-cols-layout grid-rows-layout mr-0 grid h-full w-full">
-      <header class="col-span-full col-start-2 h-full w-full bg-teal-600">
-        Header
+    <div
+      class="root font-whole grid-cols-layout grid-rows-layout mr-0 grid h-full w-full"
+    >
+      <header
+        class="grid-cols-header grid-rows-header z-10 col-span-full col-start-2 grid h-full w-full shadow-md"
+      >
+        <div
+          class="search-bar ml-8 flex flex-row items-center gap-4 rounded-full bg-white p-2"
+        >
+          <label for="search"
+            ><img src="./src/assets/search-icon.svg" alt="search"
+          /></label>
+          <input
+            type="text"
+            name="search"
+            id="search"
+            class="w-full rounded-full border-b-2 bg-gray-200 p-2 pl-5 transition-all focus:scale-100 focus:border-b-gray-200 focus:bg-white focus:shadow-sm focus:outline-none focus:transition-all"
+          />
+        </div>
+        <div class="icon-bar mr-8 flex flex-row items-center justify-end gap-6">
+          <div class="noti">
+            <img
+              src="./src/assets/noti-icon.svg"
+              class="scale-120"
+              alt="noti"
+            />
+          </div>
+          <div class="icon">
+            <img
+              src="./src/assets/user-icons.svg"
+              class="h-10 w-10 rounded-full bg-black p-2"
+              alt="user"
+            />
+          </div>
+          <div class="name mr-8">
+            <span class="text-lg font-bold">Morgan Oakley</span>
+          </div>
+        </div>
+        <div
+          class="control-bar col-span-full flex flex-row items-center justify-between"
+        >
+          <div class="greetings ml-10 flex flex-row justify-center gap-4">
+            <div class="user-icon h-14 w-14">
+              <img
+                src="src/assets/user-icons.svg"
+                class="h-full w-full rounded-full bg-black p-2"
+                alt="User-icon"
+              />
+            </div>
+            <div class="greeting-text flex flex-col">
+              <span>Hi,</span>
+              <span class="text-2xl font-extrabold"
+                >Morgan Oakley (@morgan_oakley)</span
+              >
+            </div>
+          </div>
+          <div class="control-btns mr-20 flex flex-row items-center gap-8">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+          </div>
+        </div>
       </header>
       <div
-        class="dashboard grid-rows-dashboard font-dashboard scrollbar-thin row-span-full grid h-full w-full grid-cols-1 items-center gap-y-8 overflow-auto bg-sky-600"
+        class="dashboard grid-rows-dashboard scrollbar-thin row-span-full grid h-full w-full grid-cols-1 items-center gap-y-8 overflow-auto bg-sky-600"
       >
         <div class="LOGO flex items-center justify-start gap-4">
           <img
@@ -80,19 +139,137 @@
         </div>
       </div>
       <main
-        class="col-span-full col-start-2 row-span-full row-start-2 grid grid-cols-3 grid-rows-3"
+        class="col-span-full col-start-2 row-span-full row-start-2 grid grid-cols-3 grid-rows-3 bg-gray-200 pt-2"
       >
-        <div
-          class="project col-span-2 row-span-full h-full w-full bg-green-500"
+        <section
+          class="projects col-span-2 row-span-full h-full w-full overflow-auto p-8"
         >
-          projects
-        </div>
-        <div class="extra row-span-full grid grid-cols-1 grid-rows-2">
-          <div class="announcement h-full w-full bg-yellow-400">
-            announcement
+          <h3 class="mb-4 text-2xl font-extrabold">Your projects</h3>
+          <div class="project-container">
+            <div class="project">
+              <h4>Project 1</h4>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officia, eveniet?
+              </p>
+              <div class="project-control">
+                <button>
+                  <img src="./src/assets/star+.svg" alt="star this" />
+                </button>
+                <button>
+                  <img src="./src/assets/eye+.svg" alt="mark seen" />
+                </button>
+                <button>
+                  <img src="./src/assets/share.svg" alt="share" />
+                </button>
+              </div>
+            </div>
+
+            <div class="project">
+              <h4>Project 2</h4>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officia, eveniet? Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Tenetur fugiat fuga nihil nesciunt accusamus
+                ut, cum eveniet omnis totam, iusto sequi ipsum dolorum delectus
+                libero id quam, ipsam quae ratione.
+              </p>
+              <div class="project-control">
+                <button>
+                  <img src="./src/assets/star+.svg" alt="star this" />
+                </button>
+                <button>
+                  <img src="./src/assets/eye+.svg" alt="mark seen" />
+                </button>
+                <button>
+                  <img src="./src/assets/share.svg" alt="share" />
+                </button>
+              </div>
+            </div>
+
+            <div class="project">
+              <h4>Project 3</h4>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officia, eveniet?
+              </p>
+              <div class="project-control">
+                <button>
+                  <img src="./src/assets/star+.svg" alt="star this" />
+                </button>
+                <button>
+                  <img src="./src/assets/eye+.svg" alt="mark seen" />
+                </button>
+                <button>
+                  <img src="./src/assets/share.svg" alt="share" />
+                </button>
+              </div>
+            </div>
+
+            <div class="project">
+              <h4>Project 4</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officia, eveniet?
+              </p>
+              <div class="project-control">
+                <button>
+                  <img src="./src/assets/star+.svg" alt="star this" />
+                </button>
+                <button>
+                  <img src="./src/assets/eye+.svg" alt="mark seen" />
+                </button>
+                <button>
+                  <img src="./src/assets/share.svg" alt="share" />
+                </button>
+              </div>
+            </div>
+
+            <div class="project">
+              <h4>Project 5</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officia, eveniet?
+              </p>
+              <div class="project-control">
+                <button>
+                  <img src="./src/assets/star+.svg" alt="star this" />
+                </button>
+                <button>
+                  <img src="./src/assets/eye+.svg" alt="mark seen" />
+                </button>
+                <button>
+                  <img src="./src/assets/share.svg" alt="share" />
+                </button>
+              </div>
+            </div>
+            <div class="project">
+              <h4>Project 6</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officia, eveniet?
+              </p>
+              <div class="project-control">
+                <button>
+                  <img src="./src/assets/star+.svg" alt="star this" />
+                </button>
+                <button>
+                  <img src="./src/assets/eye+.svg" alt="mark seen" />
+                </button>
+                <button>
+                  <img src="./src/assets/share.svg" alt="share" />
+                </button>
+              </div>
+            </div>
           </div>
-          <div class="trending h-full w-full bg-orange-600">trending</div>
-        </div>
+        </section>
+        <section class="extra row-span-full grid grid-cols-1 grid-rows-2">
+          <div class="announcement h-full w-full bg-gray-200">announcement</div>
+          <div class="trending h-full w-full bg-gray-200">trending</div>
+        </section>
       </main>
     </div>
     <script type="module" src="./src/main.js"></script>
