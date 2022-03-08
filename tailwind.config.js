@@ -4,10 +4,13 @@ module.exports = {
   content: ['index.html', './src/**/*.{js,jsx,ts,tsx,vue,html}'],
   theme: {
     extend: {
+      fontSize: {
+        xsm: '0.75rem',
+      },
       gridTemplateColumns: {
         layout: '1fr 2fr 2fr 2fr',
         header: '3fr 2fr',
-        projects: 'repeat(auto-fit, minmax(400px, 1fr))',
+        projects: 'repeat(auto-fit, minmax(300px, 1fr))',
       },
       gridTemplateRows: {
         dashboard: '2fr 4fr 3fr 4fr',

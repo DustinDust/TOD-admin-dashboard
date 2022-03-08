@@ -8,10 +8,10 @@
   </head>
   <body class="h-full w-full">
     <div
-      class="root mr-0 grid h-full w-full grid-cols-layout grid-rows-layout font-whole"
+      class="root grid-cols-layout grid-rows-layout font-whole mr-0 grid h-full w-full"
     >
       <header
-        class="z-10 col-span-full col-start-2 grid h-full w-full grid-cols-header grid-rows-header shadow-md"
+        class="grid-cols-header grid-rows-header z-10 col-span-full col-start-2 grid h-full w-full shadow-md"
       >
         <div
           class="search-bar ml-8 flex flex-row items-center gap-4 rounded-full bg-white p-2"
@@ -42,7 +42,7 @@
             />
           </div>
           <div class="name mr-8">
-            <span class="text-lg font-bold">Morgan Oakley</span>
+            <span class="text-base font-bold">Morgan Oakley</span>
           </div>
         </div>
         <div
@@ -52,13 +52,13 @@
             <div class="user-icon h-14 w-14">
               <img
                 src="src/assets/user-icons.svg"
-                class="h-full w-full rounded-full bg-black p-2"
+                class="h-5/6 w-5/6 rounded-full bg-black p-2"
                 alt="User-icon"
               />
             </div>
             <div class="greeting-text flex flex-col">
-              <span>Hi,</span>
-              <span class="text-2xl font-extrabold"
+              <span class="text-sm">Hi,</span>
+              <span class="text-lg font-extrabold"
                 >Morgan Oakley (@morgan_oakley)</span
               >
             </div>
@@ -71,7 +71,7 @@
         </div>
       </header>
       <div
-        class="dashboard row-span-full grid h-full w-full grid-cols-1 grid-rows-dashboard items-center gap-y-8 overflow-auto bg-sky-600 scrollbar-thin"
+        class="dashboard grid-rows-dashboard scrollbar-thin row-span-full grid h-full w-full grid-cols-1 items-center gap-y-8 overflow-auto bg-sky-600"
       >
         <div class="LOGO flex items-center justify-start gap-4">
           <img
@@ -144,7 +144,7 @@
         <section
           class="projects col-span-2 row-span-full flex h-full w-full flex-col overflow-auto"
         >
-          <h3 class="mb-2 text-2xl font-extrabold">Your projects</h3>
+          <h3 class="mb-2 text-xl font-bold">Your projects</h3>
           <div class="project-container flex-grow">
             <div class="project">
               <h4>Project 1</h4>
@@ -267,7 +267,7 @@
         </section>
         <section class="extra row-span-full grid grid-cols-1 grid-rows-2">
           <div class="announcement flex h-full w-full flex-col bg-gray-200">
-            <h3 class="mb-2 text-2xl font-extrabold">Announcement</h3>
+            <h3 class="mb-2 text-xl font-bold">Announcement</h3>
             <div class="grow rounded-lg bg-white p-4 shadow-md">
               <ul class="ancmnt-container">
                 <li>
@@ -275,7 +275,6 @@
                     <h4>Site maintainence</h4>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Quisquam doloremque fugit non obcaecati quo error
                       exercitationem et quas nulla officiis.
                     </p>
                   </div>
@@ -286,7 +285,6 @@
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Aut quidem illo aliquam tenetur sed! Ipsam aliquid quas
-                      dolorum. Voluptatem, ea.
                     </p>
                   </div>
                 </li>
@@ -296,7 +294,6 @@
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Aliquam sit quam itaque soluta? Tenetur earum est
-                      voluptates aut, error ipsum.
                     </p>
                   </div>
                 </li>
@@ -304,7 +301,7 @@
             </div>
           </div>
           <div class="trending flex h-full w-full flex-col bg-gray-200">
-            <h3 class="mt-2 mb-2 text-2xl font-extrabold">Trending</h3>
+            <h3 class="mt-2 mb-2 text-xl font-bold">Trending</h3>
             <div class="grow rounded-lg bg-white p-4 shadow-md">
               <ul class="trend-container">
                 <li>

@@ -13,27 +13,31 @@ a {
 }
 
 .control-btns > button {
-  @apply w-36 rounded-3xl bg-blue-500 pt-2 pb-2 pl-8 pr-8 text-lg font-extrabold text-white shadow-md transition-all hover:bg-blue-400 hover:transition-all;
+  @apply w-28 rounded-3xl bg-blue-500 pt-2 pb-2 pl-8 pr-8 text-center text-sm font-extrabold text-white shadow-md transition-all hover:bg-blue-400 hover:transition-all;
 }
 
 .project-container {
-  @apply grid auto-rows-fr grid-cols-projects gap-x-10 gap-y-10 overflow-auto;
+  @apply grid-cols-projects grid auto-rows-fr gap-x-10 gap-y-10 overflow-auto;
 }
 
 .project {
-  @apply z-10 grid grid-cols-1 grid-rows-project-card gap-2 rounded-lg border-l-8 border-l-yellow-500 bg-white p-6 shadow-md;
+  @apply grid-rows-project-card z-10 grid grid-cols-1 gap-2 rounded-lg border-l-8 border-l-yellow-500 bg-white p-6 shadow-md;
 }
 
 .project h4 {
-  @apply text-2xl font-extrabold;
+  @apply text-lg font-extrabold;
 }
 
 .project p {
-  @apply overflow-hidden text-clip text-base text-gray-700;
+  @apply overflow-hidden text-clip text-sm text-gray-700;
 }
 
 .project-control {
   @apply flex flex-row gap-3 justify-self-end;
+}
+
+.project-control button {
+  @apply sm:hidden md:hidden lg:block lg:h-4 lg:w-4;
 }
 
 .ancmnt-container {
@@ -49,11 +53,11 @@ a {
 }
 
 .ancmnt-item h4 {
-  @apply text-base font-bold;
+  @apply text-sm font-semibold;
 }
 
 .ancmnt-item p {
-  @apply text-sm font-light text-gray-700;
+  @apply text-xsm font-extralight text-gray-700;
 }
 
 .trend-container {
@@ -65,7 +69,7 @@ a {
 }
 
 .trend-item span {
-  @apply text-base font-bold;
+  @apply text-xsm font-bold;
 }
 
 .trend-item {
@@ -73,5 +77,5 @@ a {
 }
 
 .usr-icon {
-  @apply h-14 w-14;
+  @apply h-10 w-10;
 }
